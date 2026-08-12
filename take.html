@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Take Survey</title>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <a href="index.html" class="nav-link">← Back to Home</a>
+    
+    <h1 id="takeSurveyTitle">Loading Survey...</h1>
+    <p id="takeSurveyDesc"></p>
+
+    <hr>
+
+    <div id="surveyForm">
+      <div id="surveyQuestionsContainer"></div>
+
+      <div class="card" style="background-color: #f0fdf4; border-color: #bbf7d0; margin-top: 25px;">
+        <label style="cursor: pointer; display: flex; align-items: center; gap: 10px; font-weight: 600;">
+          <input type="checkbox" id="consentCheckbox" style="width: 18px; height: 18px;">
+          I agree to submit my responses to the survey creator.
+        </label>
+      </div>
+
+      <button type="button" id="submitSurveyBtn" style="background-color: #10b981; margin-top: 15px;">Submit Survey</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

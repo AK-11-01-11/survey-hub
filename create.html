@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create a Survey</title>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <a href="index.html" class="nav-link">← Back to Home</a>
+    <h1>📋 Survey Creator</h1>
+    <p>Design your custom survey and publish it to the platform!</p>
+
+    <div class="card">
+      <h3>1. Survey Details</h3>
+      <input type="text" id="surveyTitle" placeholder="Survey Title (e.g., Favorite Video Games)">
+      <input type="text" id="surveyDesc" placeholder="Short Description (e.g., Tell us what games you play!)">
+    </div>
+    
+    <div class="card">
+      <h3>2. Add Questions</h3>
+      <input type="text" id="questionInput" placeholder="Type your question here...">
+      
+      <select id="questionType">
+        <option value="text">Short Answer Box</option>
+        <option value="options">Multiple Choice</option>
+      </select>
+
+      <input type="text" id="optionsInput" placeholder="Enter options separated by commas (e.g., Red, Blue, Green)" style="display: none;">
+
+      <button id="addQuestionBtn">Add Question to Survey</button>
+    </div>
+
+    <hr>
+
+    <div id="survey-preview">
+      <h2>Survey Preview:</h2>
+      <div id="questionList"></div>
+    </div>
+
+    <button id="publishBtn" style="background-color: #10b981; margin-top: 20px;">🚀 Publish Survey</button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

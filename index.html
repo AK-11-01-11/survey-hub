@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Hub</title>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <header style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+      <div>
+        <h1>Survey Hub</h1>
+        <p style="color: #64748b;">Create, share, and answer surveys in real time.</p>
+      </div>
+      <div id="userNav" style="text-align: right;"></div>
+    </header>
+
+    <div style="margin-bottom: 25px;">
+      <a href="create.html" class="primary-btn-link">+ Create New Survey</a>
+    </div>
+
+    <div id="mySurveysSection" style="display: none; margin-bottom: 35px;">
+      <h2>📊 My Created Surveys</h2>
+      <div id="mySurveysFeed" style="margin-top: 15px;"></div>
+      <hr style="margin-top: 30px;">
+    </div>
+
+    <h2>Explore All Public Surveys</h2>
+    <div id="surveysFeed" style="margin-top: 15px;">
+      <p style="color: #64748b;">No surveys published yet. Be the first to create one!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

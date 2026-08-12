@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Analytics</title>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+      <a href="index.html" class="nav-link">← Back to Dashboard</a>
+      <div id="userNav"></div>
+    </div>
+
+    <div class="card" style="border-left: 5px solid #2563eb; margin-bottom: 25px;">
+      <h1 id="resSurveyTitle">Loading Results...</h1>
+      <p id="resSurveyDesc" style="color: #64748b; margin-top: 5px;"></p>
+      <hr style="margin: 15px 0;">
+      <div style="display: flex; gap: 20px; align-items: center;">
+        <span style="font-size: 18px; font-weight: bold; color: #10b981;" id="totalSubmissionsCount">Total Submissions: 0</span>
+      </div>
+    </div>
+
+    <h2>📊 Question Breakdown</h2>
+    <div id="analyticsContainer" style="margin-top: 15px;"></div>
+
+    <h2 style="margin-top: 35px;">👤 Respondent Submissions Log</h2>
+    <div id="individualResponsesContainer" style="margin-top: 15px;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

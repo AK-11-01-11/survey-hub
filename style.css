@@ -1,0 +1,127 @@
+/* 1. Page Background & Font */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  color: #333333;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+/* 2. Central Container Card */
+.container {
+  max-width: 650px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* 3. Headings & Subtexts */
+h1 {
+  color: #1e293b;
+  margin-bottom: 5px;
+}
+
+h2, h3 {
+  color: #334155;
+}
+
+p {
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+/* 4. Panels & Cards */
+.card {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* 5. Inputs & Select Dropdowns */
+input[type="text"], select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 16px 0;
+  display: inline-block;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 15px;
+  outline: none;
+}
+
+input[type="text"]:focus, select:focus {
+  border-color: #6366f1;
+}
+
+/* 6. Styled Button */
+button {
+  width: 100%;
+  background-color: #6366f1;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #4f46e5;
+}
+
+/* 7. Divider Line */
+hr {
+  border: 0;
+  height: 1px;
+  background: #e2e8f0;
+  margin: 30px 0;
+}
+
+/* 8. Dynamic Questions (For when JavaScript adds them) */
+.question-item {
+  background: #ffffff;
+  border-left: 4px solid #6366f1;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+/* Navigation and Links */
+.nav-link {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.primary-btn-link {
+  display: block;
+  text-align: center;
+  background-color: #6366f1;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.primary-btn-link:hover {
+  background-color: #4f46e5;
+}
+
+/* Published Survey Feed Cards */
+.survey-feed-card {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 18px;
+  margin-bottom: 15px;
+}
